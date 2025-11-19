@@ -1,0 +1,130 @@
+/* === CONTENEDOR GENERAL DE LAS DOS COLUMNAS === */
+.meditaciones-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: linear-gradient(135deg, #c8f3f5, #b3e7e9);
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* === PANEL IZQUIERDO === */
+.left-panel {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.left-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #045349;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #00000020;
+}
+
+.left-description {
+  font-size: 20px;
+  color: #0a6d63;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Imagen agregada */
+.hero-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px #00000030;
+}
+
+/* Animación del panel */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === PANEL DERECHO === */
+.right-panel {
+  width: 60%;
+  text-align: center;
+}
+
+/* === BOTÓN VOLVER === */
+.volver {
+  background: #1db954;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 25px;
+  transition: 0.2s ease;
+}
+
+.volver:hover {
+  background: #159b44;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #0005;
+}
+
+/* === GRID DE TARJETAS === */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* === TARJETA === */
+.card {
+  background: #121212;
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 4px 14px #00000070;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px #00000080;
+}
+
+/* === IMAGEN DE TARJETA === */
+.card img {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* === TÍTULO === */
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0;
+  color: #fff;
+}
+
+/* === AUDIO === */
+.card audio {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 5px;
+  display: block;
+}

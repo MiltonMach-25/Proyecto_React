@@ -1,0 +1,97 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.verificacion-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.verificacion-box:hover {
+  transform: translateY(-4px);
+}
+
+.verificacion-box h2 {
+  margin-bottom: 10px;
+  color: #004d40;
+  font-weight: 600;
+}
+
+.verificacion-box p {
+  color: #00796b;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.verificacion-box strong {
+  color: #004d40;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.verificacion-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.verificacion-box button {
+  background: #00796b;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.verificacion-box button:hover {
+  background: #004d40;
+  transform: translateY(-2px);
+}
+
+.mensaje {
+  color: #004d40;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.back-btn {
+  margin-top: 15px;
+  background: #004d40;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}

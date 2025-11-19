@@ -1,0 +1,97 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.registro-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.registro-box:hover {
+  transform: translateY(-4px);
+}
+
+.registro-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.registro-box button {
+  background: #00796b;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.registro-box button:hover {
+  background: #004d40;
+  transform: translateY(-2px);
+}
+
+.mensaje {
+  color: #00695c;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.back-btn {
+  margin-top: 15px;
+  background: #004d40;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}
+
+.registro-box a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+.registro-box a:hover {
+  text-decoration: underline;
+}
+/* Centrado más equilibrado de los inputs en registro */
+.registro-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro-box input {
+  width: 90%; /* Se ve más centrado visualmente */
+}

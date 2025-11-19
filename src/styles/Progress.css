@@ -1,0 +1,156 @@
+/* CONTENEDOR PRINCIPAL */
+.progress-container {
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+/* ENCABEZADO */
+header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #004d40;
+}
+
+.sub {
+  color: #01695c;
+  margin-top: 2px;
+  font-size: 0.85rem;
+}
+
+/* BOTÓN VOLVER */
+.back-btn {
+  margin-top: 8px;
+  padding: 5px 10px;
+  background: #00bfa5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #009688;
+}
+
+/* TARJETAS DE ESTADÍSTICAS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+
+.stat-card h3 {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #004d40;
+  font-weight: 600;
+}
+
+.stat-card p {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #009688;
+}
+
+/* BARRAS DE PROGRESO */
+.bars-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #004d40;
+}
+
+.bar-item {
+  margin-bottom: 10px;
+}
+
+.bar-item span {
+  font-weight: 600;
+  color: #004d40;
+  font-size: 0.85rem;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 6px;
+  margin: 4px 0;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #00bfa5;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.percent {
+  font-size: 0.7rem;
+  color: #00695c;
+  margin: 0;
+}
+
+/* GRÁFICA SEMANAL */
+.graph-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #004d40;
+}
+
+.graph {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 120px;
+}
+
+.graph-col {
+  width: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.graph-col:hover {
+  transform: scale(1.2);
+}
+
+.graph-fill {
+  width: 100%;
+  background: #00bfa5;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease, background 0.3s;
+}
+
+.active-day .graph-fill {
+  background: #009688;
+}
+
+.graph-col span {
+  margin-top: 2px;
+  display: block;
+  font-size: 0.7rem;
+  color: #004d40;
+}

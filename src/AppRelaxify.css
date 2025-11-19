@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e9f5f3;
+  color: #2b3d3a;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: #9ad0c2;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.encabezado ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+.encabezado a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.encabezado a:hover {
+  color: #023e35;
+}
+
+/* Sección de validación */
+.seccion-validacion {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.seccion-validacion input {
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #bcded5;
+}
+
+.seccion-validacion button {
+  background-color: #6cbfaf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.seccion-validacion button:hover {
+  background-color: #4ea495;
+}
+
+/* Contenido principal */
+.bienvenida {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.ejercicio, .sonidos, .creditos {
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.cajas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.caja {
+  background-color: #d8f3dc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.caja:hover {
+  background-color: #b7e4c7;
+}
+
+/* Footer */
+.pie {
+  text-align: center;
+  padding: 15px;
+  background-color: #9ad0c2;
+  color: white;
+  margin-top: 40px;
+}
+
+
+.loginRelaxify, .registroRelaxify {
+  text-align: center;
+  background: white;
+  margin: 60px auto;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.loginRelaxify input, .registroRelaxify input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #bcded5;
+}
+
+.loginRelaxify button, .registroRelaxify button {
+  background-color: #6cbfaf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginRelaxify button:hover, .registroRelaxify button:hover {
+  background-color: #4ea495;
+}
+
+.btn-link {
+  background: none;
+  color: #2b3d3a;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cerrarSesion {
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 6px;
+  cursor: pointer;
+}

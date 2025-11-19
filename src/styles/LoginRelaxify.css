@@ -1,0 +1,115 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-box h2 {
+  color: #00695c;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.login-box input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.login-box button {
+  background: #00796b;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-box button:hover {
+  background: #004d40;
+  transform: translateY(-2px);
+}
+
+.mensaje {
+  margin-top: 15px;
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #004d40;
+}
+
+.register-link a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.back-btn {
+  margin-top: 15px;
+  background: #004d40;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}
+/* Centrado más equilibrado de los inputs */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box input {
+  width: 90%; /* más centrado visualmente */
+}

@@ -1,0 +1,136 @@
+/* === Header principal === */
+.header-relaxify {
+  width: 100%;
+  background: linear-gradient(135deg, #4db6ac, #00897b);
+  padding: 22px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: white;
+}
+
+/* Barra superior derecha */
+.top-nav {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.top-link:hover {
+  border-bottom: 2px solid #e0f2f1;
+  color: #e0f2f1;
+}
+
+/* === Usuario Logueado (sin foto) === */
+.user-box.no-photo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: rgba(255, 255, 255, 0.17);
+  backdrop-filter: blur(10px);
+
+  padding: 10px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.bienvenido {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e0f7fa;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Botones estilo Main */
+.panel-btn,
+.logout-btn {
+  background: #ffffff;
+  color: #00695c;
+  border: none;
+  padding: 8px 18px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.panel-btn:hover,
+.logout-btn:hover {
+  transform: translateY(-2px);
+  background: #e0f2f1;
+  color: #004d40;
+}
+
+.logout-btn {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.logout-btn:hover {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+/* === Título del header === */
+.header-left {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header-title {
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .top-nav {
+    position: static;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+
+  .user-box.no-photo {
+    padding: 8px 14px;
+    gap: 10px;
+  }
+
+  .panel-btn,
+  .logout-btn {
+    padding: 6px 14px;
+  }
+
+  .header-title {
+    font-size: 1.9rem;
+  }
+}
